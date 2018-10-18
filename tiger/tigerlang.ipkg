@@ -1,0 +1,10 @@
+package tigerlang
+
+pkgs = contrib, pruviloj
+
+modules = Tiger.Lexer
+        , Tiger.Main
+
+main = Tiger.Main
+
+executable = tigerlang
