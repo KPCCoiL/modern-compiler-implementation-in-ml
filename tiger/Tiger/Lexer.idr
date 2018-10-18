@@ -103,7 +103,8 @@ Show TigerToken where
 extractLiteral : String -> String
 extractLiteral s with (length s)
   | Z = ""
-  | (S n) = substr 1 n s
+  | (S Z) = ""
+  | (S (S n)) = substr 1 n s
 
 comment : Lexer
 comment = opt spaces <+>
